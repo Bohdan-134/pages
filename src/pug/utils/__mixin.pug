@@ -1,0 +1,10 @@
+mixin confidenceItem({imgSrc, imgAlt, title, text})
+    .confidence-item
+        img(src=imgSrc, alt=imgAlt).confidence-item-img
+        h3.h3.confidence-item-title=title
+        p.confidence-item-text=text
+
+mixin learnItem({num, text})
+    .lern-item
+        .lern-item-num= num
+        .lern-item-text= text

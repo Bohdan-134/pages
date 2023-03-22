@@ -1,4 +1,73 @@
 @import './utils/main.utils.scss';
-body {
-    background-color: red;
+@import './modules/modules.main.scss';
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 19px 52px;
+    border: 2px solid $COLOR__YELLOW;
+    transition: .5s;
+    letter-spacing: 0.38px;
+    @include font(19px, 400, 28px, $COLOR__DARK__BLUE);
+}
+
+.btn-solid {
+    background-color: $COLOR__YELLOW;
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.btn-border {
+    background-color: transparent;
+    &:hover {
+        background-color: $COLOR__YELLOW;
+    }
+}
+
+.h2 {
+    position: relative;
+    @include font(42px, 400, 50px, $COLOR__DARK__BLUE);
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -23px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 3px;
+        background-color: $COLOR__YELLOW;
+    }
+}
+
+.h2__left {
+    position: relative;
+    @include font(42px, 400, 50px, $COLOR__DARK__BLUE);
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -23px;
+        left: 0px;
+        width: 50px;
+        height: 3px;
+        background-color: $COLOR__YELLOW;
+    }
+}
+
+.circle-before {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $COLOR__YELLOW;
+    }
 }

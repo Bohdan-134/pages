@@ -4,6 +4,20 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap' rel='stylesheet')
         link(rel="stylesheet", href="./css/main.css")
-        title Test
-    body 
+        title Pages
+    body
+        include ./pug/modules/header.pug
+        include ./pug/modules/author-works.pug
+        include ./pug/modules/about.pug
+        include ./pug/modules/confidence.pug
+        include ./pug/modules/get-book-today.pug
+        include ./pug/modules/learn-section.pug
+        include ./pug/modules/enlightenment.pug
+        include ./pug/modules/reviews.pug
+        include ./pug/modules/articles.pug
+        include ./pug/modules/contact-form.pug
+        include ./pug/modules/footer.pug
